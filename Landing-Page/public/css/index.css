@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#landing {
+  height: 100vh;
+  background-image: url('../photos/CoverPage.jpg');
+  background-position: -200px -300px;
+  background-size: 150%;
+}
+
+.page__content {}
+
+.nameplate {
+  position: absolute;
+  top: 350px;
+  left: 400px;
+  width: 300px;
+}
+
+.button--landingPage {
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  font-size: 150%;
+  height: auto;
+  width: auto;
+  color: white;
+  background-color: orange;
+  padding: 10px;
+  border-radius: 6px;
+  position: absolute;
+  top: 565px;
+  left: 400px;
+}
