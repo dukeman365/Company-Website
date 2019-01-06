@@ -2,9 +2,9 @@
   "name": "Company-Website",
   "version": "1.0.0",
   "description": "",
-  "main": "./server",
+  "main": "server.js",
   "scripts": {
-    "start":"node ./server/server.js"
+    "start": "node ./server/server.js"
   },
   "repository": {
     "type": "git",
@@ -24,6 +24,7 @@
     "express-handlebars": "^3.0.0",
     "mongodb": "^3.1.10",
     "mongoose": "^5.4.1",
-    "nodemon": "^1.18.9"
+    "nodemon": "^1.18.9",
+    "path": "^0.12.7"
   }
 }
