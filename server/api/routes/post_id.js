@@ -3,10 +3,10 @@
 var express = require('express');
 var router = express.Router();
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/mydb');
+
 
 //import models
-var Post = require('../../../Database/models/post');
+var Post = require('../../../database/models/post');
 
 //==Post Id Route
 router.route('/:post_id')
