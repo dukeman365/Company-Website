@@ -5,7 +5,7 @@ var router = express.Router();
 
 
   router.get('/',function(req, res) {
-    res.render('../views/home',{layout:'homeLayout'});
+    res.render('home',{layout:'homeLayout'});
   })
   router.get('/about',function(req, res) {
     res.render('../views/about',{layout:'aboutLayout'});
