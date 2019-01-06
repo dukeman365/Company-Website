@@ -1,54 +1,17 @@
-
-
-.center {
-  position: absolute;
-  margin: auto;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 90vh;
-  width: 90vw;
-}
-
-.section {
-  background-color: white;
-  margin-bottom: 5vh;
-  box-shadow: 0px 1px 2px grey;
-  border-radius: 5px;
-}
-
-.section__header {
-  width: 100%;
-  height: 10vh;
-  min-height:30px;
-  max-height: 100px;
-  box-shadow: 0px 1px 2px grey;
-  display:flex;
-  text-align: center;
-}
-.section__text{
-  margin:auto;
-  font-size: 20px;
-text-align:center;
-}
-
-
 #aboutUs {
-  height: 42.5vh;
+  height: 40vh;
 }
 
 #blog {
-  height: 90vh;
-
+  height: 85vh;
 }
 
 #dashboard {}
 
 #services {
-  height: 42.5vh;
+  height: 40vh;
 }
 
 #contact {
-  height: 42.5vh;
+  height: 40vh;
 }

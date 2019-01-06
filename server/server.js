@@ -44,7 +44,9 @@ Database.connectToServer(function(err) {
 
 });
 //===============================
-
+router.get('/',function(req, res) {
+  res.render('landing',{layout:'landingLayout'});
+})
 
 //Set the port
 app.listen(port);

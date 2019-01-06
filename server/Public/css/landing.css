@@ -1,0 +1,44 @@
+.nameplate {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 40vh;
+  min-height: 150px;
+  width: 40vw;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.nameplate__button {
+  background-color: #1E96E5;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 5vh;
+  min-height: 40px;
+  width: 80%;
+  margin-bottom: 2vh;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+
+.nameplate__words {
+  position: relative;
+  top: 10%;
+  left: 10%;
+  color: #1E96E5;
+}
+
+.nameplate__company {
+  font-size: 4em;
+}
+.nameplate__slogan{
+  font-size:2em;
+}
