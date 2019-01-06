@@ -10,6 +10,7 @@ var port = process.env.PORT || 8080;
 var bodyParser = require('body-parser')
 var api = require('./api/API');
 var index = require('./website/Index.js')
+
 var hbs = require('express-handlebars');
 var path = require('path')
 
@@ -19,6 +20,7 @@ app.engine('handlebars', hbs({
   defaultLayout: 'main'
 }));
 app.set('view engine', 'handlebars');
+
 
 //Allow Input from URL requests
 router.use(bodyParser.urlencoded({
