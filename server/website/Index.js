@@ -8,7 +8,7 @@ var router = express.Router();
     res.render('../views/home',{layout:'homeLayout'});
   })
   router.get('/about',function(req, res) {
-    res.render('../views/about',{layout:'contactLayout'});
+    res.render('../views/about',{layout:'aboutLayout'});
   })
   router.get('/contact',function(req, res) {
     res.render('../views/contact',{layout:'contactLayout'});
