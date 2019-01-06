@@ -4,7 +4,14 @@
 
 body {
   background-color: #1E96E5;
+  font-size: calc(.75rem + 1vw);
+  /* .75rem is 12px (at a 16px default scale) plus 1vw which scales gradually */
+  /* at 400px viewport width, this would be 16px
+  and at 1200px viewport, this would be 24px, which could work */
 }
+
+
+
 
 .shadow {
   box-shadow: 0px 1px 2px grey;
@@ -43,7 +50,6 @@ margin-top:10vh;
 
 .section__text {
   margin: auto;
-  font-size: 20px;
   text-align: center;
 }
 
