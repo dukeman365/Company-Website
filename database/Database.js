@@ -4,7 +4,7 @@
 //==========================
 var mongo = require('mongodb');
 var MongoClient = mongo.MongoClient;
-var url = "mongodb://localhost:27017/mydb";
+var url = "mongodb://server:passw0rd@ds037977.mlab.com:37977/sp-design";
 var _db;
 
 //Connect To Server Function
