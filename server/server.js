@@ -29,7 +29,7 @@ router.use(bodyParser.json())
 app.use(express.static(path.join(__dirname, '/Public')));
 
 
-
+/*
 //Database connection
 var Database = require('../Database/Database')
 
@@ -43,7 +43,7 @@ Database.connectToServer(function(err) {
   }
 
 
-});
+});*/
 //===============================
 router.get('/',function(req, res) {
   res.render('landing',{layout:'landingLayout'});
