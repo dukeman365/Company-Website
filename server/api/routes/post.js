@@ -10,7 +10,7 @@ var bodyParser = require('body-parser');
 
 
 //import models
-var Post = require('../../../Database/models/post');
+var Post = require('../../../database/models/post');
 
 //import Routes
 var post_id = require('./post_id')
