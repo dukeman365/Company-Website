@@ -31,8 +31,8 @@ Database.connectToServer(function(err) {
 //set view engine
 app.engine('handlebars', hbs({
   defaultLayout: 'main',
-  layoutsDir: "../views/layouts",
-  partialsDir: "../views/partials"
+  layoutsDir: "views/layouts",
+  partialsDir: "views/partials"
 }));
 app.set('view engine', 'handlebars');
 app.set('views', path.join(__dirname, '../views'))
