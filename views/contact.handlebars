@@ -1,9 +1,24 @@
-<div class="page">
-  <div class="center card__background">
-    <div class="shadow section__header">
-      <div class="section__text">
-        <h1>Contact</h1>
-      </div>
+<div class="page row">
+  <div id="contact__form" class="shadow card">
+    <div class="row">
+      {{#each sections}}
+        <div class="col-xs-12 col-md-4">
+          <div class="marginY shadow card">
+            <div class="shadow section__header">
+              <div class="section__title">
+              {{title}}
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="section__content">
+                      {{content}}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {{/each}}
     </div>
   </div>
 </div>

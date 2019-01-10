@@ -1,0 +1,28 @@
+<div class="row page">
+  <div class="blog shadow card">
+    <div class="shadow section__header">
+      <div class="section__title">
+        Our Blog
+      </div>
+
+    </div>
+    <div class="blog__container">
+      {{#each posts}}
+        <a href="/index/blog/{{_id}}">
+          <div class="blog__post">
+            <div class="shadow section__header">
+              <div class="section__title">
+                {{title}}
+              </div>
+            </div>
+            {{autor}}
+            {{content}}
+            {{date}}
+
+          </div>
+        </a>
+      {{/each}}
+    </div>
+
+  </div>
+</div>

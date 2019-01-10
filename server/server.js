@@ -14,24 +14,6 @@ var index = require('./website/Index.js')
 var hbs = require('express-handlebars');
 var path = require('path')
 
-
-//set view engine
-app.engine('handlebars', hbs({
-  defaultLayout: 'main'
-}));
-app.set('view engine', 'handlebars');
-
-
-//Allow Input from URL requests
-router.use(bodyParser.urlencoded({
-  extended: true
-}))
-
-router.use(bodyParser.json())
-app.use(express.static(path.join(__dirname, '/Public')));
-
-
-
 //Database connection
 var Database = require('../database/Database')
 
@@ -46,9 +28,31 @@ Database.connectToServer(function(err) {
 
 
 });
+//set view engine
+app.engine('handlebars', hbs({
+  defaultLayout: 'main',
+  layoutsDir: "../views/layouts",
+  partialsDir: "../views/partials"
+}));
+app.set('view engine', 'handlebars');
+app.set('views', path.join(__dirname, '../views'))
+
+//Allow Input from URL requests
+router.use(bodyParser.urlencoded({
+  extended: true
+}))
+
+router.use(bodyParser.json())
+app.use(express.static(path.join(__dirname, '/Public')));
+
+
+
+
 //===============================
-router.get('/',function(req, res) {
-  res.render('landing',{layout:'landingLayout'});
+router.get('/', function(req, res) {
+  res.render('landing', {
+    layout: 'landingLayout'
+  });
 })
 
 //Set the port

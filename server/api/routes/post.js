@@ -24,20 +24,23 @@ router.route('/')
   .post(function(req, res) {
 
     //create new instance of post
-    var post = new Post();
+    const post = new Post();
 
     //==Input post data==
-    post.title = req.body.title;
-    post.author = req.body.author;
-    post.content = req.body.content;
+    post.title = req.query.title;
+    post.author = req.query.author;
+    post.content = req.query.content;
 
+console.log(post.title);
+console.log(post.author);
+console.log(post.content);
     //==Get Date==
     var today = new Date();
     var dd = today.getDate();
     var mm = today.getMonth() + 1; //January is 0!
     var yyyy = today.getFullYear();
     var now = mm + '/' + dd + '/' + yyyy;
-    post.date = now;
+    post.date = today;
     //==End Get Date==
 
     //==End Input post data==

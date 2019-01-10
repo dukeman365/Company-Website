@@ -1,0 +1,14 @@
+.blog{
+  height:85vh;
+  overflow-y: scroll;
+}
+.blog__post{
+  width: 50%;
+  margin:auto;
+  margin-top: 10px;
+}
+
+.blog__container{
+  overflow-y: scroll;
+  max-height:80vh;
+}

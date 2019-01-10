@@ -12,6 +12,7 @@ var _db;
 connectToServer = (callback) => {
   mongoose.connect(url,{useNewUrlParser: true}, function(err, db) {
     _db = db;
+    console.log('db connected')
     return callback(err);
   })
 }

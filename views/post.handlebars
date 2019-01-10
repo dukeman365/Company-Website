@@ -1,0 +1,16 @@
+<div class="row page">
+  <div class="blog shadow card">
+    <div class="shadow section__header">
+      <div class="section__title">
+        {{title}} </div>
+
+    </div>
+
+    {{author}}
+    {{content}}
+    <form action="/api/post/{{_id}}" method="delete">
+
+      <button type="submit">Delete Post </button>
+    </form>
+  </div>
+</div>
