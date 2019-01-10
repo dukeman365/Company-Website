@@ -28,6 +28,7 @@ Database.connectToServer(function(err) {
 
 
 });
+app.set('views', path.join(__dirname, '../views'))
 //set view engine
 app.engine('handlebars', hbs({
   defaultLayout: 'main',
@@ -35,8 +36,8 @@ app.engine('handlebars', hbs({
   partialsDir: "views/partials"
 }));
 app.set('view engine', 'handlebars');
-app.set('views', path.join(__dirname, '../views'))
 
+console.log(path.join(__dirname,'../views'))
 //Allow Input from URL requests
 router.use(bodyParser.urlencoded({
   extended: true
