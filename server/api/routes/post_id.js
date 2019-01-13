@@ -9,7 +9,7 @@ var mongoose = require('mongoose');
 var Post = require('../../../database/models/post');
 
 //==Post Id Route
-router.route('/:post_id')
+router.route('/')
 
   //==Get a single post by ID==
   .get(function(req, res) {

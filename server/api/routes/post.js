@@ -74,7 +74,7 @@ console.log(post.content);
 //==End get all posts==
 
 //==End make new post==
-router.use('/', post_id)
+router.use('/:post_id', post_id)
 
 
 module.exports = router;

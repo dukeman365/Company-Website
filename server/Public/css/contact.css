@@ -1,4 +1,7 @@
-#contact__form{
-  min-height: 85vh;
-padding:0px 20px;
+#contact__form {
+  height: 85vh;
+  min-height:400px;
+  width: 30vw;
+  padding: 0px 20px;
+  margin: auto;
 }
