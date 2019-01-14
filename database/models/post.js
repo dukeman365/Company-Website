@@ -1,9 +1,6 @@
 //database/models/post.js
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
-var database=('../database');
-var db=database.getDb;
-
 
 var PostSchema = new Schema({
   title: String,

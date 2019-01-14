@@ -52,7 +52,7 @@ router.route('/')
 
   //==Delete post==
   .delete(function(req, res) {
-    Post.remove({
+    Post.deleteOne({
       _id: req.params.post_id
     }, function(err, bear) {
       if (err)

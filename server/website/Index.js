@@ -28,9 +28,8 @@ router.get('/about', function(req, res) {
       content: ""
     }, {
       title: "Our Advantage",
-      content: "When comes to custom web pages, you wont find a better value."
-    }]
-  }
+      content:["When comes to custom web pages, you wont find a better value. SP-Design uses the most up to date technology to bring your online presence to the next level."]
+  }]}
   //End set context for page render
 
   res.render('../views/about', context); //render page

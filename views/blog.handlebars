@@ -1,3 +1,4 @@
+
 <div class="row page">
   <div class="blog shadow card">
     <div class="shadow section__header">
@@ -8,21 +9,22 @@
     </div>
     <div class="blog__container">
       {{#each posts}}
-        <a href="/index/blog/{{_id}}">
+
           <div class="blog__post">
             <div class="shadow section__header">
               <div class="section__title">
-                {{title}}
+                <a href="/index/blog/{{_id}}">{{title}}</a>
               </div>
             </div>
             {{autor}}
             {{content}}
             {{date}}
-
+            <form>
+              <input type="button" value ="Delete" onclick="deletePost()" />
+            </form>
           </div>
-        </a>
       {{/each}}
     </div>
-
+<script type = "text/javascript" src="/js/scripts.js"></script>
   </div>
 </div>
