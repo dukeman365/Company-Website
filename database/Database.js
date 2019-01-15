@@ -12,6 +12,7 @@ connectToServer = (callback) => {
   mongoose.connect(url,{useNewUrlParser: true}, function(err, db) {
     _db = db;
     console.log('db connected to server')
+    console.log(process.env.GMAIL_PASSWORD);
     return callback(err);
   })
 }

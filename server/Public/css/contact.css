@@ -1,7 +1,14 @@
-#contact__form {
-  height: 85vh;
-  min-height:400px;
+.card {
+  min-height: 85vh;
   width: 30vw;
-  padding: 0px 20px;
+  min-width: 300px;
   margin: auto;
+}
+
+.textarea {
+  height: 200px;
+}
+
+.section__content {
+  padding: 20px;
 }

@@ -1,3 +1,3 @@
-function deletePost(){
-  alert("hello");
+function deletePost() {
+  console.log('hello')
 }

@@ -4,6 +4,7 @@
 //==============================
 var express = require('express');
 var app = express();
+require('dotenv').config();
 var path = require('path');
 var router = express.Router();
 var bodyParser = require('body-parser')
@@ -14,10 +15,10 @@ var path = require('path')
 app.use(express.static(path.join(__dirname, '/Public')));
 
 //Allow Input from URL requests
-router.use(bodyParser.urlencoded({
+app.use(bodyParser.urlencoded({
   extended: true
 }))
-router.use(bodyParser.json())
+app.use(bodyParser.json())
 
 //Database connection
 var Database = require('../database/Database')
@@ -33,8 +34,8 @@ app.set('views', path.join(__dirname, '../views'))
 //prepare view engine
 app.engine('handlebars', hbs({
   defaultLayout: 'main', //set default layout
-  layoutsDir: "../views/layouts", //set layout directory
-  partialsDir: "../views/partials" //set partials directory
+  layoutsDir: "views/layouts", //set layout directory
+  partialsDir: "views/partials" //set partials directory
 }));
 //end prepare view engine
 app.set('view engine', 'handlebars'); //set view engine
