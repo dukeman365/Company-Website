@@ -46,7 +46,8 @@ a {
 
 .section__header {
   width: 100%;
-  height: 10vh;
+  height: 5vh;
+  min-height: 75px;
   display: flex;
   text-align: center;
   z-index: 10000;
