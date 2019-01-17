@@ -1,6 +1,6 @@
 .card {
 max-height: 85vh;
-  width: 30vw;
+  max-width: 90vw;
   min-width: 300px;
   margin: auto;
 }
