@@ -38,10 +38,11 @@ a {
 }
 
 .page {
+
   width: 70vw;
   margin: auto;
-  margin-top: 10vh;
-  min-height: 90vh;
+  margin: 10vh auto auto auto;
+
 }
 
 
