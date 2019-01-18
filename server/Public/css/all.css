@@ -50,6 +50,7 @@ margin-right: auto;
 .section__header {
   width: 100%;
   height: 5vh;
+  max-height:100px;
   min-height: 75px;
   display: flex;
   text-align: center;
