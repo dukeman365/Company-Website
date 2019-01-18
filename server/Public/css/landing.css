@@ -1,8 +1,4 @@
 
-body{  font-size: calc(.75rem + 1vw);
-  /* .75rem is 12px (at a 16px default scale) plus 1vw which scales gradually */
-  /* at 400px viewport width, this would be 16px
-  and at 1200px viewport, this would be 24px, which could work */}
 .nameplate {
   position: absolute;
   margin: auto;
@@ -12,7 +8,9 @@ body{  font-size: calc(.75rem + 1vw);
   bottom: 0;
   height: 40vh;
   min-height: 200px;
+  max-height:300px;
   width: 40vw;
+  max-width:500px;
   min-width: 400px;
   background-color: white;
   border-radius: 5px;
@@ -43,8 +41,8 @@ body{  font-size: calc(.75rem + 1vw);
 }
 
 .nameplate__company {
-font-size: 3.5em;
+
 }
 .nameplate__slogan{
-font-size:2em;
+
 }
