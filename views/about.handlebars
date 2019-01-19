@@ -1,25 +1,31 @@
-<div class="page row">
-  <div id="about__card" class="shadow card--base">
+<!--Start Page-->
+<div class="page">
+  <!--Start Card-->
+  <div id="about__card" class="shadow card card__background">
     <div class="row">
 
       {{#each sections}}
         <div class="col-xs-12 col-md-4">
           <div class="marginY shadow card">
             <div class="shadow section__header">
+              <!--Title-->
               <div class="section__title">
-              {{title}}
+                {{title}}
               </div>
+              <!--Title-->
             </div>
             <div class="row">
               <div class="col-xs-12">
                 <div class="section__content">
-                      {{content}}
+                  {{content}}
                 </div>
               </div>
             </div>
           </div>
         </div>
-        {{/each}}
+      {{/each}}
     </div>
   </div>
+  <!--End Card-->
 </div>
+<!--End Page-->
