@@ -38,13 +38,10 @@ a {
 }
 
 .page {
-  width: 70vw;
-  margin: auto;
+  width: 100%;
   margin-top: 10vh;
   min-height: 90vh;
 }
-
-
 
 .section__header {
   width: 100%;
@@ -111,20 +108,15 @@ a {
 }
 
 .card {
-
   background-color: white;
   border-radius: 5px;
-
-  margin-bottom: 5vh;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 
 .card__background {
-  background-color: white;
-  position: absolute;
-  width: 80vw;
-  min-height: 85vh;
-  border-radius: 2px;
-  margin-top: 10vh;
+  padding:10px;
 }
 
 .footer__header {
@@ -164,6 +156,6 @@ li {
   border-style: none;
 }
 
-input{
-  width:100%;
+input {
+  width: 100%;
 }
