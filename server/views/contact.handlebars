@@ -1,0 +1,60 @@
+<!--StartPage-->
+<div class="page row">
+  <!--Start Contact Card-->
+  <div class="shadow card">
+    <div class="shadow section__header">
+      <div class="section__title">
+        <h1>Contact Us</h1>
+      </div>
+    </div>
+
+    <!--Start Section Content-->
+    <div class="section__content">
+      <!--Start Form-->
+      <form action="/index/contact" method="post">
+        <!--Start Form Inputs-->
+        <div class="row">
+          <div class="col-xs-12 col-md-6">
+            <div class="form-group">
+              <label for="Email">Name:</label>
+              <input type="text" name="name"> </input>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-6">
+            <div class="form-group">
+              <label for="Email">Email:</label>
+              <input name=email type="email" />
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="form-group">
+              <label for="Email">Subject:</label>
+              <input name=subject type="text" />
+            </div>
+          </div>
+          <div class="col-xs-12">
+            <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea name=message style="width:100%; height:20vh;"></textarea>
+            </div>
+          </div>
+        </div>
+        <!--End Form Inputs-->
+
+        <!--Submit Button-->
+        <div class="row">
+          <div class="col-xs-12 col-md-12">
+            <input class="button--center" type="submit" />
+          </div>
+        </div>
+        <!--End Submit Button-->
+      </form>
+      <!--End Form-->
+    </div>
+    <!--End Section Content-->
+  </div>
+  <!--End Contact Card-->
+</div>
+<!--End Page-->

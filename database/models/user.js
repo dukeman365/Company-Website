@@ -1,12 +1,9 @@
-//user/user.js
+const mongoose = require('mongoose');
+const bcrypt = require('bcrypt');
+const Schema = mongoose.Schema;
 
-var mongoose = require('mongoose')
-var bcrypt = require('bcrypt')
-var Schema = mongoose.Schema;
-
-var UserSchema = new Schema({
+const UserSchema = new Schema({
   email: {
-
     type: String,
     required: true,
     unique: true

@@ -7,7 +7,7 @@ var mongoose = require('mongoose');
 var Post = require('../../../../database/models/post');
 
 //==Post Id Route
-router.route('/:post_id')
+router.route('/')
 
   //==Get a single post by ID==
   .get(function(req, res) {
@@ -50,7 +50,7 @@ router.route('/:post_id')
 
   //==Delete post==
   .delete(function(req, res) {
-    Post.remove({
+    Post.deleteOne({
       _id: req.params.post_id
     }, function(err, bear) {
       if (err)
