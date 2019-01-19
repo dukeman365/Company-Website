@@ -18,3 +18,9 @@ passport.use('signup', new localStrategy({
     done(error);
   }
 }));
+
+//Middleware to handle user login
+passport.use('login', new localStrategy({
+  usernameField:'email',
+  passwordField:'password'
+}))
