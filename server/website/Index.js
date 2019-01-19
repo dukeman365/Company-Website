@@ -37,9 +37,12 @@ router.get('/contact', function(req, res) {
   });
 })
 
+
 router.get('/blog', function(req, res) {
   //Find all posts
-  Post.find({}).sort({date: -1}).exec(function(err, posts)  {
+  Post.find({}).sort({
+    date: -1
+  }).exec(function(err, posts) {
     if (err)
       res.send(err);
 
@@ -47,14 +50,8 @@ router.get('/blog', function(req, res) {
       layout: 'blogLayout',
       posts: posts
     }
-
     res.render('../views/blog', context)
-
   })
-
-
-
-
 })
 
 router.get('/blog/:post_id', function(req, res) {
@@ -67,7 +64,7 @@ router.get('/blog/:post_id', function(req, res) {
       title: post.title,
       author: post.author,
       content: post.content,
-      id:post._id
+      id: post._id
     }
     res.render('../views/post', context);
   })

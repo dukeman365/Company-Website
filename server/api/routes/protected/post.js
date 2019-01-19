@@ -6,10 +6,11 @@ var express = require('express');
 var router = express.Router();
 var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
+var path = require('path')
 
 
 //import models
-var Post = require('../../../database/models/post');
+var Post = require('../../../../database/models/post');
 
 //import Routes
 var post_id = require('./post_id')
@@ -31,9 +32,6 @@ router.route('/')
     post.author = req.query.author;
     post.content = req.query.content;
 
-console.log(post.title);
-console.log(post.author);
-console.log(post.content);
     //==Get Date==
     var today = new Date();
     var dd = today.getDate();

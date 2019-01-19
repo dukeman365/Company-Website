@@ -14,6 +14,8 @@ var index = require('./website/Index.js')
 var hbs = require('express-handlebars');
 var path = require('path')
 
+
+
 //Database connection
 var Database = require('../database/Database')
 
@@ -29,6 +31,7 @@ Database.connectToServer(function(err) {
 
 });
 app.set('views', path.join(__dirname, '../views'))
+app.set('database', path.join(__dirname,'../database'))
 //set view engine
 app.engine('handlebars', hbs({
   defaultLayout: 'main',

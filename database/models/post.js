@@ -1,16 +1,28 @@
 //database/models/post.js
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
-var database=('../database');
-var db=database.getDb;
+var database = ('../database');
+var db = database.getDb;
 
 
 var PostSchema = new Schema({
-  title: String,
-  author: String,
+  title: {
+    type: String,
+    required: true,
+    unique: true
+  },
+  author: {
+    type: String,
+    required: true
+  },
   date: Date,
-  content:String,
+  content: {
+    type: String,
+    required: true,
+    unique: true
+  }
 })
+
 
 //Export file
 module.exports = mongoose.model('Post', PostSchema);
