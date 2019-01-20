@@ -1,14 +1,27 @@
-.blog{
-  height:85vh;
-  overflow-y: scroll;
-}
-.blog__post{
-  width: 50%;
-  margin:auto;
-  margin-top: 10px;
+.blog {
+  width: 80vw;
+  max-height: 85vh;
+  margin-bottom: 5vh;
+  overflow: hidden;
 }
 
-.blog__container{
+.blog__post {
+  position: relative;
+  right: 100px;
+  width: 75%;
+ 
+}
+
+
+.section__header {
+
+}
+
+.section__content {
+  max-height: 75vh;
   overflow-y: scroll;
-  max-height:80vh;
+}
+
+.card {
+  margin: 210px;
 }
