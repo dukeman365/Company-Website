@@ -40,7 +40,8 @@ a {
 .page {
   width: 100%;
   margin-top: 10vh;
-  min-height: 90vh;
+  min-height: 100vh;
+  margin-bottom:5vh;
 }
 
 .section__header {
