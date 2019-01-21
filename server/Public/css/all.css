@@ -40,7 +40,6 @@ a {
 .page {
   width: 100%;
   margin-top: 5vh;
-  min-height: 90vh;
 
 }
 
@@ -72,6 +71,7 @@ a {
   background-color: white;
   position: fixed;
   top: 0;
+
 }
 
 .nav__item {
@@ -79,8 +79,9 @@ a {
   float: left;
   display: block;
   text-align: center;
-  padding: 1vh 3vw;
-  font-size: 1em;
+  padding:1vh 3vw;
+
+
 }
 
 .nav__item:hover {
@@ -88,7 +89,7 @@ a {
 }
 
 .nav__item--login {
-  font-size: 1em;
+
   font-weight: bolder;
   float: right;
   display: block;
@@ -115,13 +116,13 @@ a {
 }
 
 .card__background {
-  padding:10px;
+  padding: 10px;
 }
 
 .footer {
   position: relative;
   top: 100vh;
-  margin-top:-5vh;
+  margin-top: -5vh;
 }
 
 .footer__header {

@@ -1,6 +1,7 @@
-#about__card{
-
+#about__card {
+  margin-top: 10vh;
+  margin-bottom: 5vh;
   width: 80vw;
   min-height: 85vh;
-padding:0px 20px;
+  padding: 20px;
 }
