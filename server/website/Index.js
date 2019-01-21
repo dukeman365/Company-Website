@@ -8,7 +8,8 @@ var contact=require('./contact/contact')
 //Route for Index page
 router.get('/', function(req, res) {
   res.render('home', {
-    layout: 'homeLayout'
+    layout: 'homeLayout',
+    loggedIn: false
   });
 })
 //End route for index page
