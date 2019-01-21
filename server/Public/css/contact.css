@@ -1,8 +1,7 @@
 .card {
-
-  max-width: 90vw;
-  min-width: 300px;
-
+margin-top:10vh;
+width:90vw;
+max-width:500px;
 }
 
 .textarea {
