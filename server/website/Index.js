@@ -23,10 +23,10 @@ router.get('/about', function(req, res) {
 
     sections: [{
       title: "Our Team",
-      content: "test content"
+      content: "All of our team members are dedicated to providing you the best development experience."
     }, {
       title: "Our Commitment",
-      content: ""
+      content: "We're with you every step of the way. Once you're part of our Birdwell family, we'll take care of your online presence no matter how small the detail."
     }, {
       title: "Our Advantage",
       content:["When comes to custom web pages, you wont find a better value. SP-Design uses the most up to date technology to bring your online presence to the next level."]
