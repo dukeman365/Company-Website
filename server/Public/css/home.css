@@ -8,6 +8,16 @@
 
 }
 
+#dashboard{
+  width:80vw;
+  left:0;
+  right:0;
+  position:relative;
+margin: 5vh auto;
+  margin-top:10vh;
+
+
+}
 
 
 #services {
@@ -39,9 +49,7 @@ img {
   background-size: 110% auto;
 }
 
-.home__image {
-  z-index: 0;
-}
+
 
 .blogpost--preview {
   margin: 20px;

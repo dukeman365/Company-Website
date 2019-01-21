@@ -164,3 +164,7 @@ li {
 input {
   width: 100%;
 }
+
+.margin--bottom{
+  margin-bottom: 5vh;
+}
