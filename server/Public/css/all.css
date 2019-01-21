@@ -41,6 +41,7 @@ a {
   width: 100%;
   min-height: 95vh;
   margin-top: 5vh;
+  padding:5vh 0;
 }
 
 .section__header {

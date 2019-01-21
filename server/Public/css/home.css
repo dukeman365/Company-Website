@@ -5,20 +5,17 @@
 #blog {
   height: 85vh;
   min-height: calc(400px+5vh);
-
+  margin-bottom:5vh;
 }
 
-#dashboard{
-  width:80vw;
-  left:0;
-  right:0;
-  position:relative;
-margin: 10vh auto 0 auto;
-
-
-
+#dashboard {
+  width: 80vw;
+  left: 0;
+  right: 0;
+  position: relative;
+  margin: 0 auto 0 auto;
+  margin-bottom:-5vh;
 }
-
 
 #services {
   height: 40vh;
@@ -49,8 +46,6 @@ img {
   background-size: 110% auto;
 }
 
-
-
 .blogpost--preview {
   margin: 20px;
   height: 30vh;
@@ -65,8 +60,8 @@ img {
 .blogpost--preview__content {
   height: 5vh;
 }
-.blog__container{
 
-  height:100%;
+.blog__container {
+  height: 100%;
   overflow-y: scroll;
 }
