@@ -4,11 +4,12 @@ var mongoose = require('mongoose');
 var Post = require('../../database/models/post')
 var post_id=require('./blog/post_id')
 var contact=require('./contact/contact')
-
+var services=require('./services/services')
 //Route for Index page
 router.get('/', function(req, res) {
   res.render('home', {
-    layout: 'homeLayout'
+    layout: 'homeLayout',
+    loggedIn: false
   });
 })
 //End route for index page
@@ -80,6 +81,7 @@ router.get('/blog/:post_id', function(req, res) {
   })
 })
 
+router.use('/',services)
 router.use('/',contact);
 router.use('/',post_id);
 module.exports = router;

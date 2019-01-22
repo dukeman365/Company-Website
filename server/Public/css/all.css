@@ -39,8 +39,9 @@ a {
 
 .page {
   width: 100%;
+  min-height: 95vh;
   margin-top: 5vh;
-
+  padding:5vh 0;
 }
 
 .section__header {
@@ -71,7 +72,6 @@ a {
   background-color: white;
   position: fixed;
   top: 0;
-
 }
 
 .nav__item {
@@ -79,9 +79,7 @@ a {
   float: left;
   display: block;
   text-align: center;
-  padding:1vh 3vw;
-
-
+  padding: 1vh 3vw;
 }
 
 .nav__item:hover {
@@ -89,7 +87,6 @@ a {
 }
 
 .nav__item--login {
-
   font-weight: bolder;
   float: right;
   display: block;
@@ -113,16 +110,14 @@ a {
   background-color: white;
   border-radius: 5px;
   margin: auto;
+  overflow:hidden;
 }
 
 .card__background {
   padding: 10px;
 }
 
-.footer {
-
-
-}
+.footer {}
 
 .footer__header {
   min-height: 10vh;
@@ -153,18 +148,24 @@ li {
   display: none;
 }
 
+.button {
+  border-style: none;
+  border-radius: 5px;
+  color:white;
+  background-color: #1E96E5;
+}
+
 .button--center {
   position: relative;
-  width: 20%;
+  width: 30%;
   left: 50%;
-  margin-left: -10%;
-  border-style: none;
+  margin-left: -15%;
 }
 
 input {
   width: 100%;
 }
 
-.margin--bottom{
-  margin-bottom: 5vh;
+.margin--bottom {
+  margin-bottom: 20px;
 }

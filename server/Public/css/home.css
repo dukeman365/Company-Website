@@ -1,24 +1,22 @@
 #aboutUs {
   height: 40vh;
+  margin-bottom:5vh;
 }
 
 #blog {
   height: 85vh;
   min-height: calc(400px+5vh);
-
+  margin-bottom:5vh;
 }
 
-#dashboard{
-  width:80vw;
-  left:0;
-  right:0;
-  position:relative;
-margin: 10vh auto 0 auto;
-
-
-
+#dashboard {
+  width: 80vw;
+  left: 0;
+  right: 0;
+  position: relative;
+  margin: 0 auto 0 auto;
+  margin-bottom:-5vh;
 }
-
 
 #services {
   height: 40vh;
@@ -30,26 +28,25 @@ margin: 10vh auto 0 auto;
 
 .card {
   overflow: hidden;
-  min-height: 200px;
+  min-height: 300px;
 }
 
+#home__image--services {
+  background-image: url('/images/services.jpg');
+background-size: 100% 100%;
+background-position: center;
+}
 #home__image--contact {
-  margin: -10px;
+  background-image: url('/images/contact.jpg');
+background-size: auto 100%;
+background-position: center;
 }
 
-img {
-  width: 100%;
-  height: 100%;
-}
 
 #home__image--about {
   background-image: url("/images/group.jpg");
-  position: relative;
-  background-position: -2vw 0px;
-  background-size: 110% auto;
+background-size: 100% 100%;
 }
-
-
 
 .blogpost--preview {
   margin: 20px;
@@ -65,8 +62,8 @@ img {
 .blogpost--preview__content {
   height: 5vh;
 }
-.blog__container{
 
-  height:100%;
+.blog__container {
+  height: 100%;
   overflow-y: scroll;
 }
