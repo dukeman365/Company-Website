@@ -6,6 +6,7 @@ var db = database.getDb;
 
 
 var PostSchema = new Schema({
+index:false,
   title: {
     type: String,
     required: true,
