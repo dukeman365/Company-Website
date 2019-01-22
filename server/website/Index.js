@@ -2,9 +2,9 @@ var express = require('express');
 var router = express.Router();
 var mongoose = require('mongoose');
 var Post = require('../../database/models/post')
-var post_id=require('./blog/post_id')
-var contact=require('./contact/contact')
-var services=require('./services/services')
+var post_id = require('./blog/post_id')
+var contact = require('./contact/contact')
+var services = require('./services/services')
 //Route for Index page
 router.get('/', function(req, res) {
   res.render('home', {
@@ -30,8 +30,9 @@ router.get('/about', function(req, res) {
       content: "We're with you every step of the way. Once you're part of our Birdwell family, we'll take care of your online presence no matter how small the detail."
     }, {
       title: "Our Advantage",
-      content:["When comes to custom web pages, you wont find a better value. SP-Design uses the most up to date technology to bring your online presence to the next level."]
-  }]}
+      content: ["When comes to custom web pages, you wont find a better value. SP-Design uses the most up to date technology to bring your online presence to the next level."]
+    }]
+  }
   //End set context for page render
 
   res.render('../views/about', context); //render page
@@ -61,7 +62,9 @@ router.get('/blog', function(req, res) {
       layout: 'blogLayout',
       posts: posts
     }
-    res.render('../views/blog', context)
+    //End Set conntext
+
+    res.render('../views/blog', context) //render page
   })
 })
 
@@ -81,7 +84,7 @@ router.get('/blog/:post_id', function(req, res) {
   })
 })
 
-router.use('/',services)
-router.use('/',contact);
-router.use('/',post_id);
+router.use('/', services)
+router.use('/', contact);
+router.use('/', post_id);
 module.exports = router;
