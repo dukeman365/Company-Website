@@ -7,12 +7,10 @@
 }
 
 #dashboard{
-  width: 80vw;
   left: 0;
   right: 0;
   position: relative;
   margin: 0 auto 0 auto;
-  margin-bottom: -5vh;
   z-index: -2000;
 }
 
@@ -51,3 +49,4 @@ margin-bottom:5vh;
 .section__content {
   overflow: hidden;
 }
+.page{padding-bottom:none}
