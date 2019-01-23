@@ -1,7 +1,4 @@
-#aboutUs {
-  max-height: 40vh;
-  margin-bottom: 5vh;
-}
+
 
 #blog {
   height: 85vh;
@@ -9,7 +6,7 @@
   margin-bottom: 5vh;
 }
 
-#dashboard {
+#dashboard{
   width: 80vw;
   left: 0;
   right: 0;
@@ -19,13 +16,11 @@
   z-index: -2000;
 }
 
-#services {
-  max-height: 40vh;
+#dashboard .card{
+max-height: 40vh;
+margin-bottom:5vh;
 }
 
-#contact {
-  max-height: 40vh;
-}
 
 #home__image--services {
   background-image: url("/images/services.jpg");
