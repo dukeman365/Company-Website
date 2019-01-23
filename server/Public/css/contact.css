@@ -1,6 +1,7 @@
 .card {
-margin-top:10vh;
+
 width:90vw;
+min-height: 85vh;
 max-width:500px;
 }
 

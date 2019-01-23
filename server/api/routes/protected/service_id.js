@@ -26,14 +26,14 @@ router.route('/:service_id')
       if (err)
         res.send(err);
 
-      if (req.body.title != null) {
-        service.title = req.body.title;
+      if (req.body.name != null) {
+        service.name = req.body.name;
       }
-      if (req.body.author != null) {
-        service.title = req.body.title;
+      if (req.body.description != null) {
+        service.description = req.body.description;
       }
-      if (req.body.content != null) {
-        service.title = req.body.title;
+      if (req.body.price != null) {
+        service.price = req.body.price;
       }
 
       service.save(function(err) {
@@ -46,18 +46,19 @@ router.route('/:service_id')
       })
     })
   })
+
   //==End Update services data==
 
   //==Delete service==
   .delete(function(req, res) {
-      Service.deleteOne({
-        _id: req.params.service_id
-      }, function(err) {
-        if (err) {
-          res.json(err)
-        }
-        console.log('service deleted')
-      })
+    Service.deleteOne({
+      _id: req.params.service_id
+    }, function(err) {
+      if (err) {
+        res.json(err)
+      }
+      console.log('service deleted')
     })
-    //==End Delete service
-    module.exports = router;
+  })
+//==End Delete service
+module.exports = router;

@@ -1,12 +1,17 @@
+<!--Start page-->
 <div class="page">
   <!--Start Dashboard-->
   <div id="dashboard" class="row">
+    <!--Start page links-->
     <div class="col-xs-12 col-md-8">
+      <!--Start About Us-->
       <div class="row">
+
         <div class="col-xs-12">
-          <a href="/index/about">
-            <!--Start About Us-->
-            <div id="aboutUs" class="shadow card">
+
+          <div id="aboutUs" class="shadow card">
+            <!--Start Link-->
+            <a href="/index/about">
               <!--Start Section Header-->
               <div class="shadow section__header">
                 <!--Start Section Title-->
@@ -16,13 +21,20 @@
                 <!--End Section Title-->
               </div>
               <!--End Section Header-->
-              <div id="home__image--about" class="home__image section__content">
+              <!--Start Section Content-->
+              <div class="section__content">
+                <div id="home__image--about">
+                </div>
               </div>
-            </div>
-            <!--End About Us-->
-          </a>
+              <!--End Section Content-->
+            </a>
+            <!--End Link-->
+          </div>
+
         </div>
+
       </div>
+      <!--End About Us-->
       <div class="row">
         <div class=" col-xs-12 col-sm-6">
           <a href="/index/contact">
@@ -36,9 +48,11 @@
                 <!--End Section Title-->
               </div>
               <!--End Section Header-->
-              <div id="home__image--contact" class="home__image section__content">
-
+              <div class="section__content">
+                <div id="home__image--contact">
+                </div>
               </div>
+
             </div>
           </a>
         </div>
@@ -51,13 +65,16 @@
               </div>
               <!--End Section Title-->
             </div>
-            <div id="home__image--services" class="home__image section__content">
-
+            <div class="section__content">
+              <div id="home__image--services">
+              </div>
             </div>
+
           </div>
         </div>
       </div>
     </div>
+    <!--End Page Links-->
     <!--Start Blog-->
     <div class="col-xs-12 col-md-4">
       <div id="blog" class="shadow card">
@@ -69,12 +86,17 @@
           <!--End Section Title-->
         </div>
         <div class="section__content">
-          <div class="shadow blogpost--preview">
-            <img class="blogpost--preview__image" src="/images/test.jpg" />
-            <div class="blogpost--preview__content">
-              content
+
+          {{#each posts}}
+            <div class="shadow card">
+              <div class="shadow section__header">
+                <div class="section__title">
+                  {{title}}
+                </div>
+              </div>
+              {{content}}
             </div>
-          </div>
+          {{/each }}
         </div>
       </div>
     </div>
@@ -82,3 +104,4 @@
   </div>
   <!--End Dashboard-->
 </div>
+<!--End Page-->

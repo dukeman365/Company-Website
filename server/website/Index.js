@@ -7,10 +7,19 @@ var contact = require('./contact/contact')
 var services = require('./services/services')
 //Route for Index page
 router.get('/', function(req, res) {
-  res.render('home', {
-    layout: 'homeLayout',
-    loggedIn: false
-  });
+  Post.find({}).sort({
+    date: -1
+  }).exec(function(err, posts) {
+    if (err)
+      res.send(err);
+
+    //Set context
+    var context = {
+      layout: 'homeLayout',
+      posts: posts
+    }
+    res.render('../views/home', context)
+  })
 })
 //End route for index page
 

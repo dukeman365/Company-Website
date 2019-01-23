@@ -1,5 +1,5 @@
 #aboutUs {
-  height: 40vh;
+  max-height: 40vh;
   margin-bottom: 5vh;
 }
 
@@ -16,56 +16,43 @@
   position: relative;
   margin: 0 auto 0 auto;
   margin-bottom: -5vh;
-    z-index: -2000;
+  z-index: -2000;
 }
 
 #services {
-  height: 40vh;
+  max-height: 40vh;
 }
 
 #contact {
-  height: 40vh;
-}
-
-.card {
-  overflow: hidden;
-  min-height: 300px;
+  max-height: 40vh;
 }
 
 #home__image--services {
-  background-image: url('/images/services.jpg');
-  height: 100%;
+  background-image: url("/images/services.jpg");
   background-size: 100% 100%;
   background-position: center;
-  overflow: hidden;
+  height: 35vh;
+  margin: -10px;
 }
 
 #home__image--contact {
-  background-image: url('/images/contact.jpg');
-  background-size: auto 100%;
+  height: 35vh;
+  background-image: url("/images/contact.jpg");
+  background-size: 100% 100%;
   background-position: center;
-  height: 100%;
   overflow: hidden;
+    margin: -10px;
 }
 
 #home__image--about {
+  height: 35vh;
   background-image: url("/images/group.jpg");
   background-size: 100% 100%;
-  height: 100%;
+  background-position: center;
   overflow: hidden;
+    margin: -10px;
 }
 
-.blogpost--preview {
-  margin: 20px;
-  height: 30vh;
-}
-
-.blogpost--preview__image {
-  float: left;
-  height: 10vh;
-  width: 10vh;
-}
-
-.blogpost--preview__content {
-  height: 5vh;
+.section__content {
+  overflow: hidden;
 }

@@ -30,10 +30,10 @@ router.route('/:post_id')
         post.title = req.body.title;
       }
       if (req.body.author != null) {
-        post.title = req.body.title;
+        post.author = req.body.author;
       }
       if (req.body.content != null) {
-        post.title = req.body.title;
+        post.content = req.body.content;
       }
 
       post.save(function(err) {
