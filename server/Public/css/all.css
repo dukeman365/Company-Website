@@ -113,6 +113,11 @@ background-color: red;
   margin-top: 5vh;
   padding: 5vh 0;
 }
+.section__footer{
+  margin-top:15px;
+  position:relative;
+  z-index:2;
+}
 
 .section__header {
   width: 100%;

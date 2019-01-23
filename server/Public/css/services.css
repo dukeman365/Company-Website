@@ -17,11 +17,7 @@ z-index:2;
   z-index:1;
   padding:0;
 }
-.section__footer{
-  margin-top:15px;
-  position:relative;
-  z-index:2;
-}
+
 .service__description{
   padding:0 15px;
 }
