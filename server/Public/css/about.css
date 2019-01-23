@@ -1,5 +1,5 @@
 #about__card {
   width: 80vw;
-  min-height: 85vh;
-  padding: 20px;
+  height: 85vh;
+  overflow: hidden;
 }

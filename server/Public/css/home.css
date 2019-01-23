@@ -16,6 +16,7 @@
   position: relative;
   margin: 0 auto 0 auto;
   margin-bottom: -5vh;
+    z-index: -2000;
 }
 
 #services {
@@ -67,9 +68,4 @@
 
 .blogpost--preview__content {
   height: 5vh;
-}
-
-.blog__container {
-  height: 100%;
-  overflow-y: scroll;
 }
