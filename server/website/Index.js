@@ -1,11 +1,12 @@
 var express = require('express');
-var app=express();
+var app = express();
 var router = express.Router();
 var mongoose = require('mongoose');
 var Post = require('../../database/models/post')
 var post_id = require('./blog/post_id')
 var contact = require('./contact/contact')
 var services = require('./services/services')
+var deletePost = require('../public/js/deletePost.js')
 const pug = require('pug');
 //Route for Index page
 router.get('/', function(req, res) {
@@ -59,7 +60,7 @@ router.get('/contact', function(req, res) {
 })
 //End route for contact pages
 
-
+deletePost = require('../public/js/scripts.js')
 router.get('/blog', function(req, res) {
   //Find all posts
   Post.find({}).sort({
@@ -71,7 +72,13 @@ router.get('/blog', function(req, res) {
     //Set context
     var context = {
       layout: 'blogLayout',
-      posts: posts
+      posts: posts,
+      helpers: {
+        deletePost: function() {
+          console.log("hello")
+        }
+      }
+
     }
     //End Set conntext
 
@@ -80,8 +87,19 @@ router.get('/blog', function(req, res) {
 })
 
 router.get('/blog--new', function(req, res) {
-app.set('view engine','pug')
-  res.render('pug/test.pug')
+  app.set('view engine', 'pug')
+  //Find all posts
+  Post.find({}).sort({
+    date: -1
+  }).exec(function(err, posts) {
+    if (err)
+      res.send(err);
+
+    res.render('pug/blog.pug', {
+      posts: posts,
+      deletePost: deletePost
+    })
+  })
 })
 
 router.get('/blog/:post_id', function(req, res) {

@@ -1,0 +1,14 @@
+//-Start nav
+div(class="shadow nav")
+  a( class="nav__item" href='/index') Home
+  a( class="nav__item" href='/index/about') About
+  a( class="nav__item" href='/index/contact') Contact
+  a( class="nav__item" href='/index/about/services') Services
+  //-<a class="nav__item" href='/index/blog'>Blog</a>
+  //-
+    {{#if loggedIn}}
+      <a class="nav__item--login" href='/index/login'>Logout</a>
+    {{else}}
+      <a class="nav__item--login" href='/index/login'>Login</a>
+    {{/if}}
+//-End nav
