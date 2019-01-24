@@ -1,16 +1,10 @@
 <div class="page">
-  <!--Start blog-->
   <div class="blog shadow card">
-    <!--Start seection header-->
     <div class="shadow section__header">
-      <!--Start section title-->
       <div class="section__title">
         Our Blog
       </div>
-      <!--End section title-->
     </div>
-    <!--End section header-->
-    <!--start blog-->
     <div class="section__content">
       {{#each posts}}
         <div class="card shadow blog__post">
@@ -22,14 +16,12 @@
 
           {{content}}
           {{date}}
-          <div class="text-center shadow--top section__footer">
+        <div class="text-center shadow--top section__footer">
             By:{{author}}
-          </div>
         </div>
-        <button onclick="deletePost()">Delete</button>
+        </div>
       {{/each}}
     </div>
-    <!--end blog-->
+    <script type="text/javascript" src="/js/scripts.js"></script>
   </div>
-  <!--End blog-->
 </div>
