@@ -116,6 +116,7 @@ margin:auto;
 
 }
 .section__footer{
+  box-shadow: 0px -1px 2px grey;
   margin-top:15px;
   position:relative;
   z-index:2;
@@ -146,12 +147,13 @@ margin:auto;
 
 .shadow {
   z-index: 2;
-  box-shadow: 0px 1px 2px grey;
+  box-shadow: 0px 0px 1px black;
 }
 
 .shadow--top {
   z-index: 0;
   box-shadow: 0px -1px 2px grey;
+
 }
 
 .scrollbar {
