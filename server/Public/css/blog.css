@@ -17,13 +17,12 @@
 }
 
 .section__header {
-  position:relative;
-z-index:100;
+
 }
 
 .section__content {
   max-height: 75vh;
-  overflow-y: auto;
+  overflow-y: scroll;
 }
 
 .card {
