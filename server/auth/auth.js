@@ -2,25 +2,18 @@
 const passport = require('passport');
 const localStrategy = require('passport-local').Strategy;
 const UserModel = require('../../database/models/user');
+const database = require('../../database/Database');
+const express=require('express');
+const router=express.Router();
+const mongoose = require('mongoose');
+//Database Connection
 
-//Create passport middleware to handle registration
-passport.use('signup', new localStrategy({
-  usernameField: 'email',
-  passwordField: 'password'
-}, async (email, password, done) => {
-  try {
-    const user = await UserModel.create({
-      email,
-      password
-    });
-    return done(null, user);
-  } catch (error) {
-    done(error);
-  }
-}));
+//==Serialize user==
+passport.serializeUser((user, done) => {
+  done(null, user._id);
+})
 
-//Middleware to handle user login
-passport.use('login', new localStrategy({
-  usernameField:'email',
-  passwordField:'password'
-}))
+passport.deserializeUser((id, done) => {
+db.collection('')
+})
+//==End Serialize user==
