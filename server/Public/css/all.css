@@ -77,10 +77,10 @@ overflow: hidden;
   width: 100%;
 background-color: red;
   background-color: white;
-  position: fixed;
   top: 0;
-
-
+  z-index: 1000;
+  
+position: fixed;
 }
 
 .nav__item {
@@ -145,12 +145,10 @@ margin:auto;
 }
 
 .shadow {
-  z-index: 2;
   box-shadow: 0px 1px 2px grey;
 }
 
 .shadow--top {
-  z-index: 0;
   box-shadow: 0px -1px 2px grey;
 }
 

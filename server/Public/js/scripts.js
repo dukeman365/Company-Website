@@ -1,3 +1,6 @@
 function deletePost() {
-  console.log('hello')
+$('.button--delete').click(function(){
+    console.log('hello');
+})
+
 }
