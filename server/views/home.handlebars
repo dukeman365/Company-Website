@@ -1,44 +1,42 @@
 <!--Start page-->
 <div class="page">
-
   <div class="row">
-    <!--Start page links-->
-    <div id="dashboard"  class="col-xs-12 col-md-8">
+    <!--Start Dashboard-->
+    <div id="dashboard" class="col-xs-12 col-md-8">
       <!--Start About Us-->
       <div class="row">
-
         <div class="col-xs-12">
-
           <div id="aboutUs" class="shadow card">
-            <!--Start Link-->
-            <a href="/index/about">
-              <!--Start Section Header-->
-              <div class="shadow section__header">
-                <!--Start Section Title-->
-                <div class="section__title">
-                  About Us
-                </div>
-                <!--End Section Title-->
+
+            <!--Start Section Header-->
+            <div class="shadow section__header">
+              <!--Start Section Title-->
+              <div class="section__title">
+                <!--Start Link-->
+                <a href="./index/about">About Us</a>
+                <!--End Link-->
               </div>
-              <!--End Section Header-->
-              <!--Start Section Content-->
-              <div class="section__content">
-                <div id="home__image--about">
-                </div>
+              <!--End Section Title-->
+            </div>
+            <!--End Section Header-->
+
+            <!--Start Section Content-->
+            <div class="section__content">
+              <div id="home__image--about">
               </div>
-              <!--End Section Content-->
-            </a>
-            <!--End Link-->
+            </div>
+            <!--End Section Content-->
+
           </div>
-
         </div>
-
       </div>
       <!--End About Us-->
+      <!--Start contact / services-->
       <div class="row">
         <div class=" col-xs-12 col-sm-6">
-          <a href="/index/contact">
-            <div id="contact" class="shadow  card ">
+
+          <div id="contact" class="shadow  card margin--bottom">
+            <a href="/index/contact">
               <!--Start Section Header-->
               <div class="shadow section__header">
                 <!--Start Section Title-->
@@ -52,12 +50,14 @@
                 <div id="home__image--contact">
                 </div>
               </div>
+            </a>
+          </div>
 
-            </div>
-          </a>
         </div>
+        <!--Start Services-->
         <div class="col-xs-12 col-sm-6">
           <div id="services" class="shadow  card ">
+            <!--Start section header-->
             <div class="shadow section__header">
               <!--Start Section Title-->
               <div class="section__title">
@@ -65,43 +65,59 @@
               </div>
               <!--End Section Title-->
             </div>
+            <!--End Section header-->
+            <!--Start section content-->
             <div class="section__content">
               <div id="home__image--services">
               </div>
             </div>
-
+            <!--end section content-->
           </div>
         </div>
+        <!--End Services-->
       </div>
+      <!--End services/contact-->
     </div>
-    <!--End Page Links-->
+    <!--End Dashboard-->
     <!--Start Blog-->
     <div class="col-xs-12 col-md-4">
       <div id="blog" class="shadow card">
+        <!--Start Blog Header-->
         <div class="shadow section__header">
-          <!--Start Section Title-->
+          <!--Start Blog Title-->
           <div class="section__title">
             Our Blog
           </div>
-          <!--End Section Title-->
+          <!--End Blog Title-->
         </div>
+        <!--End Blog Header-->
+        <!--Start Blog Content-->
         <div class="section__content">
-
+          <!--Start Posts-->
           {{#each posts}}
+            <!--Start Post-->
             <div class="shadow card">
               <div class="shadow section__header">
+                <!--Start Post Title-->
                 <div class="section__title">
                   {{title}}
                 </div>
+                <!--End Post Title-->
               </div>
-              {{content}}
+              <!--Start Post Content-->
+              <div class="section__content">
+                {{content}}
+              </div>
+              <!--End Post content-->
             </div>
+            <!--End Post-->
           {{/each }}
+          <!--End Posts-->
         </div>
+        <!--End Blog Content-->
       </div>
     </div>
     <!--End Blog-->
   </div>
-  <!--End Dashboard-->
 </div>
 <!--End Page-->

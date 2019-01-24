@@ -3,11 +3,13 @@
 }
 
 a:hover {
-  text-decoration: none;
+text-decoration: none;
 }
 
 a {
+  position: relative;
   color: #1E96E5;
+  height:100%;
 }
 
 body {
@@ -30,9 +32,7 @@ li {
   background-color: white;
   border-radius: 5px;
   margin: auto;
-
 overflow: hidden;
-
 }
 
 .card__background {}
