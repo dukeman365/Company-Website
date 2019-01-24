@@ -41,6 +41,9 @@ app.engine('handlebars', hbs({
   partialsDir: "views/partials" //set partials directory
 }));
 //end prepare view engine
+//Second view Engine
+const pug = require('pug')
+//End second view engine
 app.set('view engine', 'handlebars'); //set view engine
 //End View Engine
 
