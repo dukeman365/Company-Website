@@ -1,10 +1,12 @@
 var express = require('express');
+var app=express();
 var router = express.Router();
 var mongoose = require('mongoose');
 var Post = require('../../database/models/post')
 var post_id = require('./blog/post_id')
 var contact = require('./contact/contact')
 var services = require('./services/services')
+const pug = require('pug');
 //Route for Index page
 router.get('/', function(req, res) {
   Post.find({}).sort({
@@ -75,6 +77,11 @@ router.get('/blog', function(req, res) {
 
     res.render('../views/blog', context) //render page
   })
+})
+
+router.get('/blog--new', function(req, res) {
+app.set('view engine','pug')
+  res.render('pug/test.pug')
 })
 
 router.get('/blog/:post_id', function(req, res) {
