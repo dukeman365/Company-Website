@@ -1,9 +1,7 @@
-.card {
-  width: 90vw;
-  max-width: 500px;
-  overflow:
+
+.card{
+  max-width:500px;
 }
-.page{min-height:95vh;}
 .section__content {
    max-height:85vh;
   overflow-y: auto;

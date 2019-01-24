@@ -7,11 +7,14 @@
 
 .blog__post {
   position: relative;
-  right: 100px;
-  width: 75%;
- 
+
+  width: 25%;
+
 }
 
+.page{
+  height:95vh;
+}
 
 .section__header {
 

@@ -14,12 +14,12 @@
               <a href="/index/blog/{{_id}}">{{title}}</a>
             </div>
           </div class="section__content">
-          {{autor}}
+
           {{content}}
           {{date}}
-          <form>
-            <input type="button" value="Delete" onclick="deletePost()" />
-          </form>
+        <div class="text-center shadow--top section__footer">
+            By:{{author}}
+        </div>
         </div>
       {{/each}}
     </div>
