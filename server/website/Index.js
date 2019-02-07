@@ -59,7 +59,6 @@ router.get('/contact', function(req, res) {
 })
 //End route for contact pages
 
-deletePost = require('../public/js/scripts.js')
 router.get('/blog', function(req, res) {
   //Find all posts
   Post.find({}).sort({
