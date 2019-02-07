@@ -39,11 +39,11 @@ Database.connectToServer(function(err) {
 });
 //End Database Connnection
 //==Authorization==
-app.use(session({
-  secret: process.env.SESSION__SECRET,
+/*app.use(session({
+  secret: process.env["SESSION__SECRET"],
   resave: true,
   saveUninitialized: true,
-}))
+}))*/
 app.use(passport.initialize())
 //==End Authorization==
 //View Engine
