@@ -44,7 +44,7 @@ Database.connectToServer(function(err) {
   resave: true,
   saveUninitialized: true,
 }))
-app.use(passport.initialize())
+app.use(passport.initialize())*/
 //==End Authorization==
 //View Engine
 var hbs = require('express-handlebars');
