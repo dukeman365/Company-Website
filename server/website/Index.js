@@ -6,7 +6,6 @@ var Post = require('../../database/models/post')
 var post_id = require('./blog/post_id')
 var contact = require('./contact/contact')
 var services = require('./services/services')
-var deletePost = require('../public/js/deletePost.js')
 const pug = require('pug');
 //Route for Index page
 router.get('/', function(req, res) {
