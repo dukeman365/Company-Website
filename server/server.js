@@ -43,7 +43,7 @@ Database.connectToServer(function(err) {
   secret: process.env["SESSION__SECRET"],
   resave: true,
   saveUninitialized: true,
-}))*/
+}))
 app.use(passport.initialize())
 //==End Authorization==
 //View Engine
