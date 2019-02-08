@@ -1,6 +1,6 @@
 #about__card {
   width: 80vw;
-  height: 85vh;
+  max-height: 85vh;
   overflow: hidden;
 }
 .section__content{
