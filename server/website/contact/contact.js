@@ -3,9 +3,13 @@ const router = express.Router();
 const mongoose = require('mongoose');
 const nodemailer = require('nodemailer')
 
+<<<<<<< HEAD
 // this may be the problem
 
 let transporter = nodemailer.createTransport({
+=======
+const transporter = nodemailer.createTransport({
+>>>>>>> f18a643983bf68cd9ca29a62c18cf8c072affdd1
 host:'smtp.gmail.com',
   port: 587,
   secure: false,
