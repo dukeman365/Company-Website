@@ -3,7 +3,9 @@ const router = express.Router();
 const mongoose = require('mongoose');
 const nodemailer = require('nodemailer')
 
-var transporter = nodemailer.createTransport({
+// this may be the problem
+
+let transporter = nodemailer.createTransport({
 host:'smtp.gmail.com',
   port: 587,
   secure: false,
@@ -23,16 +25,16 @@ router.route('/contact')
     );
   })
 
-  .post(function(req, res) {
+  .post(async function(req, res) {
 
-    var mailOptions = {
+    let mailOptions = {
       from: req.body.email,
       to: process.env.GMAIL_USER,
       subject: req.body.subject,
       text: req.body.name + " (" + req.body.email +")" + " says: " +req.body.message
     }
 
-    transporter.sendMail(mailOptions, function(error, info) {
+    let send = await transporter.sendMail(mailOptions, function(error, info) {
       if (error) {
         console.log(error);
       } else {
