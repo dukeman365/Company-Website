@@ -47,7 +47,9 @@ overflow: hidden;
   right: 0;
 }
 
-.footer {}
+.footer {
+  background-color: white;
+}
 
 .footer__contact {}
 
