@@ -1,0 +1,44 @@
+<div class="page">
+  <div class="card">
+    <div class="shadow section__header">
+      <div class="section__title">
+        <H1>Our Services</H1>
+      </div>
+    </div>
+    <div class="section__content">
+      {{#each services}}
+        <!--Start Service Card-->
+        <div class="col-xs-12 col-md-3">
+          <!--Start Section Card-->
+          <div class="shadow card margin--bottom">
+            <!--Start Section Header-->
+            <Div class="shadow section__header">
+              <!--Start Section Title-->
+              <div class="section__title">
+                <h2>{{name}}</h2>
+              </div>
+              <!--End Section Title-->
+            </div>
+            <!--End Section Header-->
+            <!--Start Section Content-->
+            <div class="section__content">
+              <div class="service__description">
+                {{description}}
+              </div>
+
+              <div class="section__footer">
+
+                <div class="service__price">
+                  ${{price}}
+                </div>
+              </div>
+            </div>
+            <!--End Section Content-->
+          </div>
+          <!--End Section Card-->
+        </div>
+        <!--End Service Card-->
+      {{/each}}
+    </div>
+  </div>
+</div>

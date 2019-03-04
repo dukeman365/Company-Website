@@ -9,9 +9,10 @@ var router = express.Router();
 //==Finish Setup==
 
 //==Require Routes==
-var post = require('./routes/post')
+var post = require('./routes/protected/post')
+var services = require('./routes/protected/services')
 //==End Require Routes==
-router.use(function(req,res,next){
+router.use(function(req, res, next) {
   console.log('API Accessed')
   next()
 })
@@ -30,6 +31,7 @@ router.get('/', function(req, res) {
 
 //Link To Other Routes
 router.use('/post', post)
+router.use('/services', services)
 
 
 

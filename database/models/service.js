@@ -4,8 +4,7 @@ var Schema = mongoose.Schema;
 var ServiceSchema = new Schema({
   name: String,
   description: String,
-  price: String,
-  time: String
+  price: Number,
 })
 
-module.exports=mongoose.model('Post', PostSchema);
+module.exports=mongoose.model('Service', ServiceSchema);

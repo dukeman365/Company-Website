@@ -1,0 +1,27 @@
+.card--background {
+width:95vw;
+}
+
+.service__price{
+  text-align: center;
+  color:grey;
+}
+
+.section__header{
+  margin-bottom: 15px;
+position:relative;
+z-index:2;
+}
+.section__content{
+  position:relative;
+  z-index:1;
+  padding:0;
+}
+
+.service__description{
+  padding:0 15px;
+}
+.service__price{
+  position:relative;
+  top:50%;
+}

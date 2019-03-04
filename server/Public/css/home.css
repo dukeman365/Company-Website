@@ -1,64 +1,50 @@
-#aboutUs {
-  height: 40vh;
-}
-
 #blog {
   height: 85vh;
   min-height: calc(400px+5vh);
+  margin-bottom: 5vh;
+}
+
+#dashboard{
+  left: 0;
+  right: 0;
+  position: relative;
+  margin: 0 auto 0 auto;
 
 }
 
-
-
-#services {
-  height: 40vh;
+#dashboard .card{
+max-height: 40vh;
+margin-bottom:5vh;
 }
 
-#contact {
-  height: 40vh;
-}
 
-.card {
-  overflow: hidden;
-  min-height: 200px;
-}
-
-#home__image--contact {
+#home__image--services {
+  background-image: url("/images/services.jpg");
+  background-size: 100% 100%;
+  background-position: center;
+  height: 35vh;
   margin: -10px;
 }
 
-img {
-  width: 100%;
-  height: 100%;
+#home__image--contact {
+  height: 35vh;
+  background-image: url("/images/contact.jpg");
+  background-size: 100% 100%;
+  background-position: center;
+  overflow: hidden;
+    margin: -10px;
 }
 
 #home__image--about {
+  height: 35vh;
   background-image: url("/images/group.jpg");
-  position: relative;
-  background-position: -2vw 0px;
-  background-size: 110% auto;
+  background-size: 100% 100%;
+  background-position: center;
+  overflow: hidden;
+    margin: -10px;
 }
 
-.home__image {
-  z-index: 0;
+.section__content {
+  overflow: hidden;
 }
-
-.blogpost--preview {
-  margin: 20px;
-  height: 30vh;
-}
-
-.blogpost--preview__image {
-  float: left;
-  height: 10vh;
-  width: 10vh;
-}
-
-.blogpost--preview__content {
-  height: 5vh;
-}
-.blog__container{
-
-  height:100%;
-  overflow-y: scroll;
-}
+.page{padding-bottom:none}

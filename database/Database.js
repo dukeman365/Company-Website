@@ -21,7 +21,7 @@ connectToServer = (callback) => {
 //Get DB function
 //======================================
 getDb = () => {
-  console.log('db connection successful')
+  console.log('auth connection successful')
   return _db;
 }
 

@@ -2,14 +2,18 @@ const express = require('express');
 const router = express.Router();
 const mongoose = require('mongoose');
 const nodemailer = require('nodemailer')
+// this may be the problem
 
-const transporter = nodemailer.createTransport({
-  service: 'gmail',
+let transporter = nodemailer.createTransport({
+
+host:'smtp.gmail.com',
+  port: 587,
+  secure: false,
   auth: {
     user: process.env.GMAIL_USER,
     pass: process.env.GMAIL_PASSWORD
   }
-})
+});
 
 
 router.route('/contact')
@@ -21,20 +25,25 @@ router.route('/contact')
     );
   })
 
-  .post(function(req, res) {
-    var mailOptions = {
+  .post(async function(req, res) {
+
+    let mailOptions = {
       from: req.body.email,
       to: process.env.GMAIL_USER,
       subject: req.body.subject,
-      text: req.body.message
+      text: req.body.name + " (" + req.body.email +")" + " says: " +req.body.message
     }
-    transporter.sendMail(mailOptions, function(error, info) {
+
+    let send = await transporter.sendMail(mailOptions, function(error, info) {
       if (error) {
-      console.log(error);
+        console.log(error);
       } else {
-      console.log('Email sent: ' + info.response)
+        res.render('../views/contact', { //context
+            layout: 'contactLayout'
+          } //End context
+        );
       }
     })
-  })
+  });
 
 module.exports = router;

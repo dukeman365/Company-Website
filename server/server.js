@@ -11,6 +11,14 @@ var bodyParser = require('body-parser')
 var api = require('./api/API');
 var index = require('./website/Index.js')
 var path = require('path')
+//==Auth==
+//Require Passport
+const passport = require('passport')
+//Require Express Session
+const session=require('express-session')
+//==End Auth==
+
+
 //serve static assets
 app.use(express.static(path.join(__dirname, '/Public')));
 
@@ -20,24 +28,38 @@ app.use(bodyParser.urlencoded({
 }))
 app.use(bodyParser.json())
 
+
+
 //Database connection
 var Database = require('../database/Database')
 Database.connectToServer(function(err) {
   if (err)
     console.log(err);
+
 });
 //End Database Connnection
-
+//==Authorization==
+/*app.use(session({
+  secret: process.env["SESSION__SECRET"],
+  resave: true,
+  saveUninitialized: true,
+}))
+app.use(passport.initialize())*/
+//==End Authorization==
 //View Engine
 var hbs = require('express-handlebars');
 app.set('views', path.join(__dirname, '../views'))
-//prepare view engine
+app.set('database', path.join(__dirname, '../database'))
+//set view engine
 app.engine('handlebars', hbs({
   defaultLayout: 'main', //set default layout
   layoutsDir: "views/layouts", //set layout directory
   partialsDir: "views/partials" //set partials directory
 }));
 //end prepare view engine
+//Second view Engine
+const pug = require('pug')
+//End second view engine
 app.set('view engine', 'handlebars'); //set view engine
 //End View Engine
 

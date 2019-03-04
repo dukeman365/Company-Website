@@ -1,69 +1,124 @@
-<div id="dashboard" class="page">
+<!--Start page-->
+<div class="page">
   <div class="row">
-
-
-    <div class="col-xs-12 col-md-8">
+    <!--Start Dashboard-->
+    <div id="dashboard" class="col-sm-12 col-md-8">
+      <!--Start About Us-->
       <div class="row">
-        <div class="col-xs-12">
-          <a href="/index/about">
-            <div id="aboutUs" class="shadow card margin--bottom">
+        <div class="col-sm-12">
+          <div id="aboutUs" class="shadow card">
+            <a href="./index/about">
+              <!--Start Section Header-->
               <div class="shadow section__header">
+                <!--Start Section Title-->
                 <div class="section__title">
+                  <!--Start Link-->
                   About Us
+                  <!--End Link-->
+                </div>
+                <!--End Section Title-->
+              </div>
+              <!--End Section Header-->
+
+              <!--Start Section Content-->
+              <div class="section__content">
+                <div id="home__image--about">
                 </div>
               </div>
-              <div id="home__image--about" class="home__image section__content">
-
-              </div>
-            </div>
-          </a>
+              <!--End Section Content-->
+            </a>
+          </div>
         </div>
       </div>
+      <!--End About Us-->
+      <!--Start contact / services-->
       <div class="row">
-        <div class=" col-xs-12 col-sm-6">
-          <a href="/index/contact">
-            <div id="contact" class="shadow  card margin--bottom">
+        <div class=" col-sm-12 col-sm-6">
+
+          <div id="contact" class="shadow  card margin--bottom">
+            <a href="/index/contact">
+              <!--Start Section Header-->
               <div class="shadow section__header">
+                <!--Start Section Title-->
                 <div class="section__title">
                   Contact
                 </div>
+                <!--End Section Title-->
               </div>
-              <div id="home__image--contact" class="home__image section__content">
-                <img src="/images/contact.jpg" />
+              <!--End Section Header-->
+              <div class="section__content">
+                <div id="home__image--contact">
+                </div>
               </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-xs-12 col-sm-6">
-          <div id="services" class="shadow  card margin--bottom">
-            <div class="shadow section__header">
-              <div class="section__title">
-                Our Services
-              </div>
+            </a>
+          </div>
 
-            </div>
-            <img src="/images/services.jpg" />
+        </div>
+        <!--Start Services-->
+        <div class="col-sm-12 col-sm-6">
+          <div id="services" class="shadow  card ">
+            <a href=./index/services> <!--Start section header-->
+              <div class="shadow section__header">
+                <!--Start Section Title-->
+                <div class="section__title">
+                  Our Services
+                </div>
+                <!--End Section Title-->
+              </div>
+              <!--End Section header-->
+              <!--Start section content-->
+              <div class="section__content">
+                <div id="home__image--services">
+                </div>
+              </div>
+              <!--end section content-->
+            </a>
           </div>
         </div>
+        <!--End Services-->
       </div>
+      <!--End services/contact-->
     </div>
-    <div class="col-xs-12 col-md-4">
+    <!--End Dashboard-->
+    <!--Start Blog-->
+    <div class="col-sm-12 col-md-4">
       <div id="blog" class="shadow card">
+        <!--Start Blog Header-->
         <div class="shadow section__header">
+          <!--Start Blog Title-->
           <div class="section__title">
             Our Blog
           </div>
+          <!--End Blog Title-->
         </div>
-        <div class="blog__container">
-          <div class="shadow blogpost--preview">
-            <img class="blogpost--preview__image" src="/images/test.jpg" />
-            <div class="blogpost--preview__content">
-              content
+        <!--End Blog Header-->
+        <!--Start Blog Content-->
+        <div class="section__content">
+          <!--Start Posts-->
+          {{#each posts}}
+            <!--Start Post-->
+            <div class="shadow card">
+              <div class="shadow section__header">
+                <!--Start Post Title-->
+                <div class="section__title">
+                  {{title}}
+                </div>
+                <!--End Post Title-->
+              </div>
+              <!--Start Post Content-->
+              <div class="section__content">
+                {{content}}
+              </div>
+              <!--End Post content-->
             </div>
-          </div>
+            <!--End Post-->
+          {{/each }}
+          <!--End Posts-->
         </div>
+        <!--End Blog Content-->
       </div>
     </div>
+    <!--End Blog-->
   </div>
 </div>
-</div>
+<!--End Page-->
