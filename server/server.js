@@ -12,7 +12,7 @@ var api = require('./api/API');
 var index = require('./website/Index.js')
 var path = require('path')
 var Database = require('../database/Database.js')//get the database
-app.set('views', path.join(__dirname, '../views'));//set views to views directory
+app.set('views', path.join(__dirname, 'views'));//set views to views directory
 app.set('database', path.join(__dirname, '../database'))//sets "database" to database directory
 
 //use body parser
