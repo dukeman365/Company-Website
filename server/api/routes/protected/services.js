@@ -5,7 +5,7 @@ var bodyParser = require('body-parser');
 var path = require('path')
 
 //import model
-var Service = require('../../../../database/models/service');
+var Service = require('../../../database/models/service');
 
 //import route
 var service_id=require('./service_id');

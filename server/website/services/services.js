@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const Service = require('../../../database/models/service')
+const Service = require('../../database/models/service')
 
 router.route('/services')
   .get(function(req, res) {

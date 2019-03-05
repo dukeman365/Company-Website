@@ -10,7 +10,7 @@ var path = require('path')
 
 
 //import models
-var Post = require('../../../../database/models/post');
+var Post = require('../../../database/models/post');
 
 //import Routes
 var post_id = require('./post_id')

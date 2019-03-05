@@ -4,7 +4,7 @@ var express = require('express');
 var router = express.Router();
 var mongoose = require('mongoose');
 //import models
-var Service = require('../../../../database/models/service');
+var Service = require('../../../database/models/service');
 
 //==Service Id Route
 router.route('/:service_id')
