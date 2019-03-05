@@ -116,7 +116,8 @@ router.get('/blog/:post_id', function(req, res) {
   })
 })
 
-router.use('/', services)
-router.use('/', contact);
-router.use('/', post_id);
-module.exports = router;
+router.use('/', services) //services pages
+router.use('/', contact); //contact page
+router.use('/', post_id); //post page
+
+module.exports = router;//export routes
