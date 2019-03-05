@@ -3,7 +3,9 @@
   min-height: calc(400px+5vh);
   margin-bottom: 5vh;
 }
-
+#blog .card{
+  margin-bottom:10px;
+}
 #dashboard{
   left: 0;
   right: 0;

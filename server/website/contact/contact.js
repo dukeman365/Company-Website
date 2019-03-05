@@ -31,12 +31,12 @@ router.route('/contact')
 
   //send email
   .post(async function(req, res) {
-//set mail options
+    //set mail options
     let mailOptions = {
       from: req.body.email, //sender's Email
       to: process.env.GMAIL_USER, //client's Email
       subject: req.body.subject, //email subject
-      text: req.body.name + " (" + req.body.email + ")" + " says: " + req.body.message//email text
+      text: req.body.name + " (" + req.body.email + ")" + " says: " + req.body.message //email text
     }
     //end set mail options
 
@@ -44,13 +44,13 @@ router.route('/contact')
       if (error) { //handle errors
         console.log(error);
       } //end handle errors
-      else {//render contact page
+      else { //render contact page
         res.render('../views/contact', { //context
             layout: 'contactLayout'
           } //End context
-        );//end render contact pages
+        ); //end render contact pages
       }
-    })//end send mail with transporter
+    }) //end send mail with transporter
   }); //end send email
 
 
