@@ -11,45 +11,28 @@ var bodyParser = require('body-parser')
 var api = require('./api/API');
 var index = require('./website/Index.js')
 var path = require('path')
-//==Auth==
-//Require Passport
-const passport = require('passport')
-//Require Express Session
-const session=require('express-session')
-//==End Auth==
+var Database = require('../database/Database.js')//get the database
+app.set('views', path.join(__dirname, '../views'));//set views to views directory
+app.set('database', path.join(__dirname, '../database'))//sets "database" to database directory
 
-
+//use body parser
+app.use(bodyParser.json())
 //serve static assets
 app.use(express.static(path.join(__dirname, '/Public')));
-
 //Allow Input from URL requests
 app.use(bodyParser.urlencoded({
   extended: true
 }))
-app.use(bodyParser.json())
-
-
-
 //Database connection
-var Database = require('../database/Database')
 Database.connectToServer(function(err) {
   if (err)
     console.log(err);
-
 });
 //End Database Connnection
-//==Authorization==
-/*app.use(session({
-  secret: process.env["SESSION__SECRET"],
-  resave: true,
-  saveUninitialized: true,
-}))
-app.use(passport.initialize())*/
-//==End Authorization==
+
 //View Engine
 var hbs = require('express-handlebars');
-app.set('views', path.join(__dirname, '../views'))
-app.set('database', path.join(__dirname, '../database'))
+
 //set view engine
 app.engine('handlebars', hbs({
   defaultLayout: 'main', //set default layout
@@ -68,18 +51,19 @@ app.set('view engine', 'handlebars'); //set view engine
 
 //Routes
 //===============================
+//Landing page
 router.get('/', function(req, res) {
   res.render('landing', {
     layout: 'landingLayout'
   });
 })
-
+//End Landing pages
 //Set the port
 var port = process.env.PORT || 8080;
 app.listen(port);
 console.log("Server running on port: " + port)
 
 //Register Routes
-app.use('/api', api)
-app.use('/index', index)
+app.use('/api', api)//API Route
+app.use('/index', index)//Website Router
 app.use('/', router);

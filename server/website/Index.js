@@ -12,15 +12,16 @@ router.get('/', function(req, res) {
   Post.find({}).sort({
     date: -1
   }).exec(function(err, posts) {
-    if (err)
-      res.send(err);
+    if (err)//handle errors
+     console.log(err);//log error to console
 
     //Set context
     var context = {
       layout: 'homeLayout',
       posts: posts
     }
-    res.render('../views/home', context)
+    //end set context
+    res.render('../views/home', context)//render page
   })
 })
 //End route for index page
@@ -116,7 +117,8 @@ router.get('/blog/:post_id', function(req, res) {
   })
 })
 
-router.use('/', services)
-router.use('/', contact);
-router.use('/', post_id);
-module.exports = router;
+router.use('/', services) //services pages
+router.use('/', contact); //contact page
+router.use('/', post_id); //post page
+
+module.exports = router;//export routes
