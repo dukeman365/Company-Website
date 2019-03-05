@@ -1,13 +1,1 @@
 
-.card{
-  max-width:500px;
-}
-.section__content {
-   max-height:85vh;
-  overflow-y: auto;
-  padding: 15px;
-}
-
-.textarea {
-  height: 200px;
-}

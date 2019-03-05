@@ -110,9 +110,8 @@ li {
 
 .page {
   margin: auto;
-  min-height: 90vh;
-  margin-top: 10vh;
-padding:0 10vw;
+  height: 100vh;
+  padding: 10vh 10vw;
 }
 
 .section__footer {
