@@ -3,13 +3,13 @@
 }
 
 a:hover {
-text-decoration: none;
+  text-decoration: none;
 }
 
 a {
   position: relative;
   color: #1E96E5;
-  height:100%;
+  height: 100%;
 }
 
 body {
@@ -32,7 +32,7 @@ li {
   background-color: white;
   border-radius: 5px;
   margin: auto;
-overflow: hidden;
+  overflow: hidden;
   box-shadow: 0px 0px 1px black;
 }
 
@@ -76,14 +76,12 @@ overflow: hidden;
 
 .nav {
   width: 100%;
-background-color: red;
+  background-color: red;
   background-color: white;
   position: fixed;
   top: 0;
   z-index: 10000;
-    box-shadow: 0px 0px 1px black;
-
-
+  box-shadow: 0px 0px 1px black;
 }
 
 .nav__item {
@@ -111,18 +109,17 @@ background-color: red;
 }
 
 .page {
-  width:80vw;
-margin:auto;
+  margin: auto;
   min-height: 90vh;
   margin-top: 10vh;
-
-
+padding:0 10vw;
 }
-.section__footer{
-  margin-top:15px;
+
+.section__footer {
+  margin-top: 15px;
   box-shadow: 0px 0px 2px grey;
-  position:relative;
-  z-index:2;
+  position: relative;
+  z-index: 2;
 }
 
 .section__header {
@@ -132,7 +129,7 @@ margin:auto;
   text-align: center;
   z-index: 10000;
   background-color: white;
-    box-shadow: 0px 0px 1px black;
+  box-shadow: 0px 0px 1px black;
 }
 
 .section__title {
@@ -143,18 +140,13 @@ margin:auto;
 }
 
 .section__content {
-
   height: inherit;
   padding: 10px;
-
 }
-
-
 
 .shadow--top {
   z-index: 0;
   box-shadow: 0px -1px 2px grey;
-
 }
 
 .scrollbar {
